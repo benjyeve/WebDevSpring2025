@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Use CTRL + / to make a note like this -->
+    <!-- this specifies the character set encoding.
+     without this tag our fonts might not load properly -->
+    <meta charset="utf-8" />
+    <!-- the viewport tag sets the initial scale and ensures
+     proper responsive behavior -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The title tag shows up in the browser tab and as the big blue link in search results -->
+    <title>HTML Boilerplate</title>
+    <style>
+      /* tag selector = any p tag will get these styles, unless they have their own style applied */
+      p {
+        color: green;
+      }
+      /* class selectors always begin with . the style gets applied wherever class = selector */
+      .nyu_text {
+        color: blueviolet;
+      }
+      /* ID selector always starts with #. IDs are unique, cannot be reused on this page*/
+      #top {
+        color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- everything inside the body tag shows up to the user unless
+     modified to not be visible with css -->
+
+    <!-- ONLY 1 H1 per page -->
+    <h1 id="top">Heading 1 is the most important text on the page. Only one per page.</h1>
+    <h2>
+      As the heading numbers get bigger, the text gets smaller. All still boldish weight, and they are all more important than any other text tags.
+    </h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <!-- horizontal rule aka page divider -->
+     <hr />
+     <!-- Most text will likely be p tags -->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere libero vel interdum semper. Integer malesuada, libero non vehicula hendrerit, arcu diam blandit ligula, et auctor nisl elit vitae purus. Quisque quis aliquet lacus, bibendum fermentum massa. Cras neque ante, accumsan scelerisque odio ac, elementum auctor velit. <br />Aliquam ligula enim, maximus commodo accumsan non, maximus ac massa. Morbi nec aliquam est. Phasellus eu ipsum ac diam mattis sodales. Curabitur porttitor leo tellus, a fringilla mi pharetra at. <br />Vivamus elementum libero lacus, vitae pulvinar quam malesuada ac. Etiam eu erat eu felis sollicitudin sodales at ac arcu. Duis imperdiet leo est, sed convallis massa convallis quis. Proin viverra pellentesque eros, id dictum ipsum accumsan at. Ut a nunc non elit finibus laoreet. In semper, odio nec mollis mollis, arcu magna ornare enim, eu congue dolor neque vitae neque. Aenean congue leo nisl, in laoreet ligula tincidunt et.
+         </p>  
+      <p>
+        Cras scelerisque dapibus massa rhoncus tempus. 
+        <a
+        href="https://www.lingq.com/en/learn-latin-online/translate/la/aliquam/" target="_blank" >Aliquam</a>
+        pharetra lectus tortor, quis pulvinar dolor rhoncus ac. Sed mattis imperdiet leo vel varius. <span style="color: red">In quis ipsum non mi dapibus facilisis.</span> Nam felis metus, convallis eget nulla sed, dapibus suscipit mauris. Ut et turpis erat. Vivamus sit amet rutrum purus, ut venenatis ex. Nam id mauris dignissim, venenatis velit vel, iaculis nunc.
+         </p>
+      <p class="nyu_text">
+        <em>Cras sed ex a tortor ultrices venenatis ut vel elit.</em> Donec eleifend egestas leo, eget rhoncus dolor pellentesque vitae. Nunc et sem iaculis, vestibulum odio sit amet, tempus leo. Nulla varius placerat nunc id sollicitudin. <strong>Nam cursus purus metus, sit amet feugiat tortor congue id.</strong> Curabitur pulvinar accumsan pharetra. <strong>Vivamus interdum sodales nulla finibus eleifend.</strong> Vivamus ante justo, iaculis eu lorem fringilla, fermentum commodo mi. Fusce et leo dictum, mattis tellus id, dignissim erat. Maecenas sollicitudin commodo felis. Vestibulum non erat aliquam, feugiat odio quis, ullamcorper ante. Nunc eros quam, cursus eu tempus malesuada, suscipit at turpis.
+      </p>
+
+      <h2>Buttermilk Pancakes</h2>
+      <p>
+        A description of pancakes. No one wants to read this, but everyone seems to write a bunch here on recipe sites.
+      </p>
+      <!-- This is an image loaded from an external URL -->
+      <img 
+        src="https://sugarspunrun.com/wp-content/uploads/2019/03/Best-buttermilk-pancake-recipe-14-of-16.jpg" 
+        alt="The fluffiest buttermilk pancakes you ever did see!"
+        width="100px"
+        height="100px"
+      />
+      <!-- Image loaded from same folder (right next to) as html file -->
+      <img src="pancake.jpg" alt="Pancake right next to index file." />
+
+      <!-- Image loaded from a folder within the project -->
+      <img 
+        src="img/pancake.jpg" 
+        alt="Pancake in the img folder next to index file." 
+      />
+      <ul>
+        <li>Flour</li>
+        <li>Sugar</li>
+        <li>Eggs</li>
+        <li>
+          Butter
+          <ol>
+            <li>Sublist-item 1</li>
+            <li>Sublist-item 2</li>
+            <li>Sublist-item 3</li>
+        </ol>
+      </li>
+      </ul>
+
+      <ol>
+        <li>Mix it up.</li>
+        <li>Heat it up.</li>
+        <li>Pour some batter.</li>
+        <li>Flip it.</li>
+        <li>Eat it.
+          <ul>
+            <li>Sublist-item 1</li>
+            <li>Sublist-item 2</li>
+            <li>Sublist-item 3</li>
+        </ul>
+      </li>
+      </ol>
+
+
+
+
+
+      <!-- Anchor tag linking to another element on the same page by ID  -->
+      <a href="#top">Back to top</a>
+    </body>
+</html>
