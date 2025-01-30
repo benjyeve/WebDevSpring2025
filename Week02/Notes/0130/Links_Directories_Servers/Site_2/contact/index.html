@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us Site 2</title>
+    <meta
+      name="description"
+      content="Method 2 - Each Page as Own Directory Folder with Index.html within"
+    />
+  </head>
+
+  <body>
+    <!-- Place your Nav Links Here -->
+    <nav>
+      <!-- use UL LI and A for Nav Links within our NAV tag -->
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about/index.html">About</a></li>
+        <li><a href="./index.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Contact Us</h1>
+    <!-- Bonus - Place Images Here -->
+    <img src="../img/chicken3.jpeg" alt="Bilbo Baggins" />
+    <!-- Double Bonus - Add Contact Form Here -->
+    <form method="post">
+      <fieldset>
+        <legend>Contact Us</legend>
+        <label for="first_name"> First Name: </label>
+        <input type="text" name="first_name" placeholder="John" required />
+        <br />
+        <br />
+        <label for="last_name">Last Name: </label>
+        <input type="text" name="last_name" placeholder="Smith" required />
+        <br />
+        <br />
+        <label for="email_address">Email Address: </label>
+        <input
+          type="email"
+          name="email_address"
+          placeholder="apples@bananas.com"
+          required
+        />
+        <br />
+        <br />
+        <label for="phone_number">Phone Number: </label>
+        <input
+          type="tel"
+          name="phone_number"
+          placeholder="888-888-8888"
+          required
+        />
+        <br />
+        <br />
+        <label for="reasons_why">Reasons for Contact: </label>
+        <br />
+        <textarea name="reasons_why" cols="50" rows="10" required> </textarea>
+        <br />
+        <br />
+        <button title="Submit Reasons for Contact" name="submit_contact">
+          Submit
+        </button>
+      </fieldset>
+    </form>
+  </body>
+</html>
