@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    background: transparent;
+    background-color: rgb(243, 158, 149);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  header {
+    background-color: salmon;
+    font-family: fantasy;
+    font-size: 35px;
+    width: auto;
+    height: 200px;
+    text-align: center;
+    padding: 1px;
+    border: 10px solid black;
+    font-style: italic;
+    line-height: 10px;
+  }
+
+  h4 {
+    background: transparent;
+  }
+
+  nav {
+    font-style: normal;
+    font-size: 20px;
+    background: transparent;
+  }
+
+  /* work on the header styles */
+
+  nav p { 
+    font-size: 30px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 50px;
+    background: transparent;
+  }
+
+  h1 {
+    font-size: 50px;
+    padding: 0;
+    margin: 10px;
+  }
+
+  article img {
+    border: 20px solid black;
+  }
+
+  /* figure out how to shift the text down */
+
+  p em {
+    font-size: 20px;
+    color: rgb(66, 66, 66);
+    background: none;
+  }
+
+  aside h3, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+
+  aside {
+    background-color: rgba(0, 255, 255, 0.571);
+    text-align: center;
+    border: 10px solid rgb(7, 7, 59);
+    margin-left: 1080px;
+    margin-top: -300px;
+    padding: 10px;
+    position: absolute;
+  }
+
+  h2 {
+    background: transparent;
+    font-size: 30px;
+    border-bottom: 10px solid black;
+    margin-right: 800px;
+    margin-bottom: 0;
+  }
+
+  footer {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    font-size: 23px;
+    text-align: center;
+    padding: 1px;
+  }
+
+  footer a {
+    text-decoration: none;
+    background: none;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
