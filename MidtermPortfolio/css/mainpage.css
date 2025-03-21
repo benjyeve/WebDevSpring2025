@@ -1,0 +1,183 @@
+/* Desktop Styling */
+
+div.hero {
+  /* background-image: url(../img/placeholder.png); */
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.inside {
+  color: white;
+  position: absolute;
+  display: flex;
+  font-size: 2rem;
+  flex-direction: column;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.inside h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.inside a {
+  text-decoration: none;
+  color: blueviolet;
+  background-color: bisque;
+  margin: 0;
+  padding: 0 1rem;
+  width: auto;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.inside a:hover {
+  background-color: rgb(198, 148, 87);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Portfolio */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.thumb {
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%;
+  overflow: hidden;
+  margin: 24px auto;
+  border-radius: 10px;
+}
+
+.thumb img {
+  transform: scale(1);
+  transition: all 0.75s ease-in-out;
+}
+
+.thumb:hover img {
+  transform: scale(1.5);
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: all 1s ease-in-out;
+  color: black;
+}
+
+.mask h2 {
+  margin: 0;
+}
+
+.mask p {
+  font-style: italic;
+}
+
+.thumb:hover .mask {
+  opacity: 1;
+}
+
+.aboveWork {
+  font-size: 3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .inside {
+    width: 50%;
+    padding: 1rem;
+    text-size-adjust: 75%;
+    justify-content: center;
+  }
+
+  .inside h2 {
+    font-size: 2rem;
+  }
+
+  .mask p {
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+    scale: 0.75;
+    padding: 0;
+    margin: 0;
+  }
+
+  .work_stuff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .aboveWork {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .thumb {
+    scale: 0.85;
+  }
+
+  .mask {
+    scale: 1.25;
+    position: static;
+    order: -1;
+    background-color: bisque;
+  }
+
+  .thumb a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+    text-decoration: none;
+  }
+
+  .thumb img {
+    margin-top: 10px;
+  }
+
+  .thumb .mask {
+    opacity: 1;
+  }
+
+  .thumb:hover img {
+    transform: scale(1);
+  }
+}

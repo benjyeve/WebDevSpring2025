@@ -1,0 +1,40 @@
+/* Desktop Styling */
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.about {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+  padding-bottom: 3rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about img {
+  width: 20%;
+  height: auto;
+}
+
+.about p {
+  width: 50%;
+  font-size: 2rem;
+  margin: 0;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about p {
+    margin: 1rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+}

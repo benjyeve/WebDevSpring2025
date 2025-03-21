@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/contactme.css" />
+  </head>
+  <body>
+    <!-- Top of Page -->
+    <header>
+      <h1 class="logo"><a href="index.html">Ben</a></h1>
+      <nav id="main-nav">
+        <ul class="menu">
+          <li><a href="./index.html">Portfolio</a></li>
+          <li><a href="./AboutMe.html">About Me</a></li>
+          <li><a href="./ContactMe.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2>Get in Touch!</h2>
+        <form action="https://formspree.io/f/xkgjgkvk" method="POST">
+          <div class="row">
+            <label for="name" class="label-lg">Name:</label>
+            <input type="text" name="name" class="input-lg" required />
+
+            <label for="email" class="label-lg">Email:</label>
+            <input type="email" name="email" class="input-lg" required />
+          </div>
+
+          <div class="message-area">
+            <label for="message">Contact Me Here!</label>
+            <textarea
+              class="message"
+              name="message"
+              placeholder="Leave a comment or question here."
+              required
+            ></textarea>
+          </div>
+          <div class="button-bar">
+            <button class="btn-dark" type="submit">Send</button>
+          </div>
+          <input
+            name="subject"
+            type="hidden"
+            value="New submission from {{name}}"
+          />
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <nav id="main-nav">
+          <ul class="closer">
+            <li><a href="./index.html">Portfolio</a></li>
+            <li><a href="./AboutMe.html">About Me</a></li>
+            <li><a href="./ContactMe.html">Contact Me</a></li>
+          </ul>
+        </nav>
+        <p>© 2025 Benjamin Evelson. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

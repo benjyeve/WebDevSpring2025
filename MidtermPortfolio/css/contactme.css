@@ -1,0 +1,129 @@
+/* Desktop Styling */
+
+h2 {
+  margin: 0;
+  padding-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.row label {
+  padding-right: 0.5rem;
+}
+
+.label-lg {
+  font-size: 2rem;
+}
+
+.input-lg {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid gray;
+  margin-right: 2rem;
+}
+
+.message-area {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  font-size: 2rem;
+}
+
+.message-area label {
+  padding-bottom: 0.5rem;
+}
+
+.message {
+  height: 16rem;
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.button-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.btn-dark {
+  width: 50%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: bisque;
+  color: var(--c-btn-text);
+}
+
+.btn-dark:hover {
+  cursor: pointer;
+  background-color: rgb(198, 148, 87);
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .container {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  main {
+    padding-bottom: 20%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .row label {
+    padding-right: 0;
+    padding-bottom: 0.5rem;
+  }
+
+  .label-lg {
+    font-size: 1.75rem;
+  }
+
+  .input-lg {
+    width: 100%;
+    margin-right: 0;
+    padding: 0.75rem;
+  }
+
+  .message-area {
+    margin: 1rem 0;
+    font-size: 1.75rem;
+  }
+
+  .message {
+    height: 12rem;
+    padding: 0.75rem;
+  }
+
+  .button-bar {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+
+  .btn-dark {
+    width: 100%;
+    padding: 0.75rem;
+  }
+}
