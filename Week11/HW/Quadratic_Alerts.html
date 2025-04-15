@@ -6,9 +6,9 @@
     <title>Quadratic Solutions</title>
     <script type="text/javascript">
       function solve() {
-        const a = parseInt(prompt("Please enter the value of a:"));
-        const b = parseInt(prompt("Please enter the value of b:"));
-        const c = parseInt(prompt("Please enter the value of c:"));
+        const a = parseFloat(prompt("Please enter the value of a:"));
+        const b = parseFloat(prompt("Please enter the value of b:"));
+        const c = parseFloat(prompt("Please enter the value of c:"));
 
         const insideSquare = b ** 2 - 4 * a * c;
 
@@ -48,6 +48,10 @@
       while (keepGoing) {
         solve();
         keepGoing = confirm("Do you want to solve another equation?");
+      }
+
+      if (keepGoing != true) {
+        alert("Come back next time!");
       }
     </script>
   </head>
