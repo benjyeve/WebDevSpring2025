@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quadratic Solutions</title>
+    <script type="text/javascript">
+      function solve() {
+        const a = parseInt(prompt("Please enter the value of a:"));
+        const b = parseInt(prompt("Please enter the value of b:"));
+        const c = parseInt(prompt("Please enter the value of c:"));
+
+        const insideSquare = b ** 2 - 4 * a * c;
+
+        if (a === 0) {
+          if (b === 0) {
+            if (c === 0) {
+              alert("This equation has infinite solutions");
+            } else {
+              alert("This equation has no solution");
+            }
+          } else {
+            const solution = Math.round(((-1 * c) / b) * 10) / 10;
+            alert(`This equation has 1 solution: x = ${solution}`);
+          }
+        } else {
+          if (insideSquare < 0) {
+            alert("This equation has no real solutions");
+          } else {
+            const sqrtVal = Math.sqrt(insideSquare);
+            const solution1 =
+              Math.round(((-1 * b + sqrtVal) / (2 * a)) * 10) / 10;
+            const solution2 =
+              Math.round(((-1 * b - sqrtVal) / (2 * a)) * 10) / 10;
+
+            if (solution1 === solution2) {
+              alert(`This equation has 1 solution: x = ${solution1}`);
+            } else {
+              alert(
+                `This equation has 2 solutions: x = ${solution1} and x = ${solution2}`
+              );
+            }
+          }
+        }
+      }
+
+      let keepGoing = true;
+      while (keepGoing) {
+        solve();
+        keepGoing = confirm("Do you want to solve another equation?");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
