@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Nav Bar & Carousel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <style>
+      /* This selector is grabbed using google developer tools, note the specificity! */
+      .carousel-indicators [data-bs-target] {
+        background-color: transparent;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        /* Icon collor */
+        color: white;
+        font-size: 20px;
+        text-indent: 0;
+      }
+
+      /* The container div for my captions, maybe you want to add a transparent color */
+      .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      /* target only the h5s we want */
+      .carousel-caption h5 {
+        text-transform: uppercase;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .carousel-caption p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar with brand on left, menu on right, and a dropdown menu -->
+    <div class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+      <div class="container-fluid">
+        <!-- This is our logo/brandname etc~ bigger darker font, you probably want to override colors and font families here -->
+        <a href="#" class="navbar-brand">Nicolas Cage Free Eggs</a>
+        <!-- This is our hidden on desktop (larger screens) hamburger -->
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropDown"
+          aria-controls="#navbarNavDropDown"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div
+        class="collapse navbar-collapse justiny-content-end"
+        id="navbarNavDropdown"
+      >
+        <ul class="navbar-nav align-self-end px-4">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" aria-current="page">Chickens</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Eggs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ducks</a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Breeds</a
+            >
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a href="#" class="dropdown-item">Americauna</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">Mile Fleur</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">Seabright</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">Silkie</a>
+              </li>
+            </ul>
+            <!-- End Dropdown Menu -->
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Bootstrap Navbar -->
+
+    <!-- Begin First Carousel -->
+    <!-- Container div takes the ID of this slideshow, change transition type with classnames eg; slide => fade -->
+    <!-- carousel-fade will make it fade instead of slide -->
+    <!-- data-bs-ride="carousel" data attribute makes it autoplay -->
+    <div id="ourFirstSlider" class="carousel slide">
+      <!-- These are the dots on the bottom, highlighting which slide you are on. Make sure ID in data-bs-target matches your container ID -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#ourFirstSlider"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        >
+          <!-- this only works if because we loaded the icon stylesheet -->
+          <i class="bi-alarm"></i>
+        </button>
+        <button
+          type="button"
+          data-bs-target="#ourFirstSlider"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        >
+          <!-- this only works if because we loaded the icon stylesheet -->
+          <i class="bi-alarm"></i>
+        </button>
+        <button
+          type="button"
+          data-bs-target="#ourFirstSlider"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        >
+          <!-- this only works if because we loaded the icon stylesheet -->
+          <i class="bi-alarm"></i>
+        </button>
+        <button
+          type="button"
+          data-bs-target="#ourFirstSlider"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        >
+          <!-- this only works if because we loaded the icon stylesheet -->
+          <i class="bi-alarm"></i>
+        </button>
+      </div>
+      <!-- End Indicators -->
+      <!-- Begin main slideshow content -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/chicken1.jpeg" class="d-block w-100" alt="RIP" />
+          <!-- Optional caption div with classnames -->
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cameron Poe</h5>
+            <p>May she rest in piece</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/chicken2.jpeg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/chicken3.jpeg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/chicken4.jpeg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Fourth slide label</h5>
+            <p>Some representative placeholder content for the fourth slide.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Main Carousel Content -->
+      <!-- Prev Next Buttons - Don't forget to update the ID in  -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#ourFirstSlider"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#ourFirstSlider"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- End First Carousel -->
+
+    <!-- Loading BS option JS because we are using components -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
