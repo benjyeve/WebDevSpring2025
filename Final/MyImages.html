@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Images</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/project.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollSmoother requires ScrollTrigger -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
+
+    <script src="./javascript/projects.js"></script>
+
+    <script text="text/javascript"></script>
+  </head>
+  <body>
+    <!-- Top of Page -->
+    <header>
+      <h1 class="logo"><a href="index.html">Ben</a></h1>
+      <nav id="main-nav">
+        <ul class="menu nav">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Portfolio
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./MyCode.html">My Code</a></li>
+              <li>
+                <a class="dropdown-item" href="./MyVideos.html">My Videos</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./MyImages.html">My Images</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./AboutMe.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./ContactMe.html">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Code goes here -->
+    <h2>My Images</h2>
+
+    <main>
+      <div class="container">
+        <div class="project">
+          <h3>Jojo Rabbit Pixel Art (2019)</h3>
+          <article class="left">
+            <a class="thumb" href="./img/JojoRabbitPoster.png" target="_blank"
+              ><img
+                src="./img/jojoCropped.png"
+                alt="The poster of Jojo Rabbit, but in pixel art form"
+            /></a>
+            <p>
+              Created in 2019, I utilized a small canvas within Adobe Photoshop
+              to create a pixelized version of the Jojo Rabbit poster, before
+              upscaling it to a bigger size so that it was more visible.
+            </p>
+          </article>
+        </div>
+
+        <div class="project">
+          <h3>Pixel Art Mascot (2018)</h3>
+          <article class="right">
+            <a class="thumb" href="./img/Stanky.webp" target="_blank"
+              ><img
+                src="./img/Stanky.webp"
+                alt="a pixel art version of a mascot"
+            /></a>
+            <p>
+              A pixelized version of streamer DSPStanky's astronaut mascot, made
+              in Photoshop and upscaled to a bigger size.
+            </p>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <nav id="main-nav">
+          <ul class="closer">
+            <li><a href="./index.html">Portfolio</a></li>
+            <li><a href="./AboutMe.html">About Me</a></li>
+            <li><a href="./ContactMe.html">Contact Me</a></li>
+          </ul>
+        </nav>
+        <p>© 2025 Benjamin Evelson. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

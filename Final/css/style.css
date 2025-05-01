@@ -1,0 +1,150 @@
+/* GENERAL CSS STYLESHEET FOR ALL HTML PAGES */
+
+/* GLOBAL STYLES */
+
+@import url("https://fonts.googleapis.com/css2?family=Emblema+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  background-color: bisque;
+  min-height: 100vh;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../img/spikes.webp");
+  padding: 0 2rem;
+  position: relative;
+}
+
+.logo {
+  margin: 1rem;
+  font-family: "Emblema One", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  color: black;
+  font-weight: 300;
+}
+
+.logo a:visited {
+  color: black;
+}
+
+.logo a:hover {
+  color: rgb(105, 105, 105);
+}
+
+header a {
+  text-decoration: none;
+}
+
+.menu a {
+  color: rgb(77, 86, 86);
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.menu li {
+  min-width: 5rem;
+}
+
+.menu li a {
+  display: block;
+  padding: 1rem;
+}
+
+.menu li a:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.25)
+    ),
+    url(../img/tweed.webp);
+  padding: 0;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  margin-top: auto;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.closer a {
+  color: rgb(0, 0, 0);
+}
+
+.closer {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+
+.closer li {
+  min-width: 5rem;
+}
+
+.closer li a {
+  display: block;
+  padding: 1rem;
+}
+
+.closer li a:hover {
+  color: rgb(162, 162, 162);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.smaller a {
+  font-size: 0.8rem;
+}
+
+footer p {
+  margin: 0.5rem 0 1 0;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    text-align: center;
+    padding: 0;
+    justify-content: center;
+  }
+
+  footer {
+    padding: 1rem;
+    padding-top: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
